@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Booking - Apex AutoCare</title>
+<meta name="description" content="Book a service or ask a question - Apex AutoCare responds within one business hour.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Oswald:wght@500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><span class="dot"></span>Apex AutoCare</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn--amber nav-cta" href="contact.html">Book Service</a>
+    </nav>
+  </div>
+</header>
+<section class="page-hero" style="background-image:url('images/workshop-tool-wall.jpg');">
+  <div class="page-hero__scrim"></div>
+  <div class="container">
+
+    <h1>Book Your Service</h1>
+    <p>Tell us what your car needs and we will confirm your appointment within one business hour.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container grid grid--2">
+    <div>
+
+      <h2>Request An Appointment</h2>
+      <form id="contact-form" novalidate style="margin-top:1.5rem;">
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Jane Doe">
+            <span class="error">Please enter your name.</span>
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required placeholder="(555) 000-0000">
+            <span class="error">Please enter a phone number.</span>
+          </div>
+          <div class="field full">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="jane@example.com">
+            <span class="error">Please enter a valid email address.</span>
+          </div>
+          <div class="field full">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service...</option>
+              <option>Oil &amp; fluid service</option>
+              <option>Brake service / repair</option>
+              <option>Battery &amp; electrical</option>
+              <option>Belts, hoses &amp; cooling</option>
+              <option>Engine &amp; drivetrain</option>
+              <option>Tires, wheels &amp; alignment</option>
+              <option>Check engine light / diagnostics</option>
+              <option>Other / not sure</option>
+            </select>
+            <span class="error">Please choose a service.</span>
+          </div>
+          <div class="field full">
+            <label for="message">Tell Us About The Issue</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Symptoms, noises, when it started..."></textarea>
+            <span class="error">Please describe the issue.</span>
+          </div>
+        </div>
+        <button type="submit" class="btn btn--amber" style="margin-top:1.4rem;">Send Request</button>
+        <p class="form-note">We reply within one business hour. No spam, ever.</p>
+        <div class="form-success">Thanks! Your request has been received - we will confirm your appointment shortly.</div>
+      </form>
+    </div>
+    <div>
+
+      <h2>Hours &amp; Location</h2>
+      <ul class="info-list" style="margin-top:1.5rem;">
+        <li><span class="ico">&#128205;</span><div><strong>Address</strong><span>1420 Ridgeway Ave, Springfield, ST 40218</span></div></li>
+        <li><span class="ico">&#128222;</span><div><strong>Phone</strong><span><a href="tel:+15551234567">(555) 123-4567</a></span></div></li>
+        <li><span class="ico">&#9993;</span><div><strong>Email</strong><span><a href="mailto:service@apexautocare.example">service@apexautocare.example</a></span></div></li>
+        <li><span class="ico">&#128337;</span><div><strong>Hours</strong><span>Mon-Fri 8:00-18:00 &middot; Sat 9:00-14:00 &middot; Sun closed</span></div></li>
+      </ul>
+      <div class="card" style="margin-top:1.5rem;">
+        <div class="card__img"><img src="images/team-avery-quinn.jpg" alt="Avery Quinn, service advisor"></div>
+        <div class="card__body">
+          <h3>Talk To Avery</h3>
+          <p>Our service advisor will walk you through options, pricing and timing - no pressure, no jargon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="dot"></span>Apex AutoCare</a>
+        <p style="margin-top:1rem; max-width:38ch;">Independent auto repair done right - honest diagnosis, quality parts, and workmanship guaranteed.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>1420 Ridgeway Ave</li>
+          <li>Springfield, ST 40218</li>
+          <li><a href="tel:+15551234567">(555) 123-4567</a></li>
+          <li><a href="mailto:service@apexautocare.example">service@apexautocare.example</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> Apex AutoCare. All rights reserved.</span>
+      <span>Mon-Fri 8:00-18:00 &middot; Sat 9:00-14:00</span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
